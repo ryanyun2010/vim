@@ -11,8 +11,6 @@ autocmd filetype python so ~/repos/vim/ftplugin/python.vim
 autocmd BufWritePre *.css  :normal gg=G
 set hlsearch
 set cursorline
-hi StatusLineNc guibg=#000000    guifg=white
-hi StatusLine   guibg=#666666    guifg=white
 set ignorecase
 set nu
 set mouse=a
