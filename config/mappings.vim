@@ -82,4 +82,6 @@ nmap <c-f> :Files<cr>
 nmap ;f :NERDTreeToggle<cr>
 nnoremap <leader>ev :tabe ~/.vimrc<cr>
 nnoremap <leader>em :tabe ~/.vim/config/mappings.vim<cr>
+nnoremap <c-e> 4<c-e>
+nnoremap <c-y> 4<c-y>
 nnoremap <leader>ep :tabe ~/.vim/config/plugins.vim<cr>
