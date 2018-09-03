@@ -1,6 +1,6 @@
 "vundle settings{{{
 set nocompatible
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/repos/vim/bundle/Vundle.vim
 call vundle#begin()
 filetype plugin indent on
 "}}}

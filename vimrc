@@ -1,13 +1,13 @@
 set nocompatible
-so ~/.vim/config/color.vim
-so ~/.vim/config/mappings.vim
-so ~/.vim/config/plugins.vim
-so ~/.vim/config/virtedit.vim
-so ~/.vim/automakedir.vim
-autocmd filetype html so ~/.vim/ftplugin/html.vim
-autocmd filetype css so ~/.vim/ftplugin/css.vim
-autocmd filetype js so ~/.vim/ftplugin/js.vim
-autocmd filetype python so ~/.vim/ftplugin/python.vim
+so ~/repos/vim/config/color.vim
+so ~/repos/vim/config/mappings.vim
+so ~/repos/vim/config/plugins.vim
+so ~/repos/vim/config/virtedit.vim
+so ~/repos/vim/automakedir.vim
+autocmd filetype html so ~/repos/vim/ftplugin/html.vim
+autocmd filetype css so ~/repos/vim/ftplugin/css.vim
+autocmd filetype js so ~/repos/vim/ftplugin/js.vim
+autocmd filetype python so ~/repos/vim/ftplugin/python.vim
 autocmd BufWritePre *.css  :normal gg=G
 set hlsearch
 set cursorline
