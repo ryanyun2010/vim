@@ -1,6 +1,8 @@
+"leader{{{
 let mapleader=";"
 let localmapleader=","
-command Serverwrite  !git add .;git commit -m commit;git push -u origin master
+"}}}
+"mappings{{{
 inoremap <c-d> <esc>dda
 nnoremap <f4> :!open -a safari %<cr><cr>
 inoremap <leader>h1 <h1></h1>  <esc>hhhhho<enter><!--<++>--><esc>kkhhhhhhi
@@ -30,9 +32,9 @@ inoremap <leader>s <esc>:w<cr>i
 autocmd filetype tex inoremap <leader>tex \documentclass{artticle}<enter>\begin{document}\end{document}
 inoremap < <<esc>:w<cr>i<right>
 inoremap <leader><up> <esc>mmGo<esc>'mddkPmmGdd'ma
-inoremap <leader><down> <esc> mmGo<esc>'mddpmmGdd'ma
 ino <bar> <bar> <esc>mm:Tab /<bar><cr>`mf<bar>a
 inoremap <C-k> <esc>ka
+inoremap <leader><down> <esc> mmGo<esc>'mddpmmGdd'ma
 inoremap <C-j> <esc>ja
 inoremap <C-h> <esc>ha
 inoremap <C-l> <esc>la
@@ -43,9 +45,9 @@ inoremap <localleader><leader> <esc>lmmA;<esc>`mi
 cabbr con find ~/.vim/config
 cabbr vcon find ~/.vim/config
 cabbr gvcon find ~/.gvimrc
-nnoremap sop :so %
 nnoremap sov :so ~/.vimrc
 nnoremap fic :find ~/.vim/colors/color.vim
+nnoremap sop :so %
 nnoremap con :vsp ~/.vimrc<cr>
 nnoremap m1 yy$pvr=
 nnoremap m2 yy$pvr-
@@ -85,3 +87,6 @@ nnoremap <leader>em :tabe ~/.vim/config/mappings.vim<cr>
 nnoremap <c-e> 4<c-e>
 nnoremap <c-y> 4<c-y>
 nnoremap <leader>ep :tabe ~/.vim/config/plugins.vim<cr>
+"}}}
+"commands{{{
+command Serverwrite  !git add .;git commit -m commit;git push -u origin master
