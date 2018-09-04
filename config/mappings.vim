@@ -87,6 +87,7 @@ nnoremap <leader>em :tabe ~/.vim/config/mappings.vim<cr>
 nnoremap <c-e> 4<c-e>
 nnoremap <c-y> 4<c-y>
 nnoremap <leader>ep :tabe ~/.vim/config/plugins.vim<cr>
+nnoremap gA Go
 "}}}
 "commands{{{
 command Serverwrite  !git add .;git commit -m commit;git push -u origin master
