@@ -3,7 +3,6 @@ func! TFL_VirtualEdit()
 		echo "ERROR: Unable to toggle virtual editing."
 		finish
 	endif
-
 	if(exists("g:virtualeditstate") == 0)
 		set virtualedit=all
 

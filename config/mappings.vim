@@ -1,6 +1,6 @@
 "leader{{{
-let mapleader=";"
-let localmapleader=","
+let mapleader=","
+let localmapleader="\""
 "}}}
 "mappings{{{
 inoremap <c-d> <esc>dda
@@ -32,7 +32,6 @@ inoremap <leader>s <esc>:w<cr>i
 autocmd filetype tex inoremap <leader>tex \documentclass{artticle}<enter>\begin{document}\end{document}
 inoremap < <<esc>:w<cr>i<right>
 inoremap <leader><up> <esc>mmGo<esc>'mddkPmmGdd'ma
-ino <bar> <bar> <esc>mm:Tab /<bar><cr>`mf<bar>a
 inoremap <C-k> <esc>ka
 inoremap <leader><down> <esc> mmGo<esc>'mddpmmGdd'ma
 inoremap <C-j> <esc>ja
@@ -78,16 +77,21 @@ nnoremap <c-q> :q<cr>
 nnoremap <c-q> :q<cr>
 nnoremap S :set spell<cr>[s1z=:set nospell<cr>
 inoremap <c-q> <esc>:q<cr>i
-nmap <c-h> ;;b
-nmap <c-l> ;;w
+nmap <c-h> ,,b
+nmap <c-l> ,,w
 nmap <c-f> :Files<cr>
 nmap ;f :NERDTreeToggle<cr>
-nnoremap <leader>ev :tabe ~/.vimrc<cr>
-nnoremap <leader>em :tabe ~/.vim/config/mappings.vim<cr>
+nnoremap <leader>ev :tabe ~/repos/vim/vimrc<cr>
+nnoremap <leader>em :tabe ~/repos/vim/config/mappings.vim<cr>
 nnoremap <c-e> 4<c-e>
 nnoremap <c-y> 4<c-y>
-nnoremap <leader>ep :tabe ~/.vim/config/plugins.vim<cr>
+nnoremap <leader>ep :tabe ~/repos/vim/config/plugins.vim<cr>
 nnoremap gA Go
+nnoremap <c-c> :!pdflatex %<enter>
+nnoremap <c-o> :lcd<enter>:!open *.pdf
+nnoremap * *N
+nnoremap LOOKATZOMBS :read ~/repos/vim/config/zombs.js.vim<cr>
+nnoremap LOOKATZOMBSHTML :read ~/repos/vim/config/zombs.html.vim<cr>
 "}}}
 "commands{{{
-command Serverwrite  !git add .;git commit -m commit;git push -u origin master
+command! Serverwrite  !git add .;git commit -m commit;git push -u origin master

@@ -23,6 +23,7 @@ Plugin 'nightsense/stellarized'
 Plugin 'tpope/vim-commentary'
 Plugin 'uguu-org/vim-matrix-screensaver'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'raimondi/delimitmate'
 call vundle#end()
 "}}}
 "settings{{{
